@@ -320,6 +320,8 @@ const Product = () => {
                           alt={products[currentSlide]?.title}
                           className="w-full h-full object-cover"
                           loading="lazy"
+                          width={100}
+                          height={100}
                         />
 
                         {/* Sophisticated overlay system */}

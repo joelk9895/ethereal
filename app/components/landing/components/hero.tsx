@@ -9,51 +9,55 @@ const Hero = () => {
 
   // Array of sample packs with image/video paths, names, descriptions, and colors
   // Wrapped in useMemo to prevent recreation on every render
-  const samplePacks = useMemo(() => [
-    {
-      image: "/images/landing/image1.png",
-      title: "ETHEREAL",
-      subtitle: "Dark atmospheric sounds with haunting melodies and deep bass",
-      color: "#8b5cf6",
-      type: "image",
-    },
-    {
-      image: "/images/landing/image2.png",
-      title: "AMBIENT",
-      subtitle: "Flowing soundscapes perfect for cinematic productions",
-      color: "#06b6d4",
-      type: "image",
-    },
-    {
-      image: "/images/landing/image3.png",
-      title: "URBAN",
-      subtitle: "Street-inspired beats with modern trap influences",
-      color: "#f59e0b",
-      type: "image",
-    },
-    {
-      image: "/images/landing/image4.png",
-      title: "DIGITAL",
-      subtitle: "Futuristic synths and glitchy electronic textures",
-      color: "#10b981",
-      type: "image",
-    },
-    {
-      image: "/images/landing/image5.png",
-      title: "COSMIC",
-      subtitle: "Space-age sounds for otherworldly music experiences",
-      color: "#8b5cf6",
-      type: "image",
-    },
-    {
-      image: "/images/landing/hero-video.mov",
-      title: "CINEMATIC",
-      subtitle:
-        "Immersive visual experiences that transport you beyond reality",
-      color: "#c4a734",
-      type: "video",
-    },
-  ], []);
+  const samplePacks = useMemo(
+    () => [
+      {
+        image: "/images/landing/image1.png",
+        title: "ETHEREAL",
+        subtitle:
+          "Dark atmospheric sounds with haunting melodies and deep bass",
+        color: "#8b5cf6",
+        type: "image",
+      },
+      {
+        image: "/images/landing/image2.png",
+        title: "AMBIENT",
+        subtitle: "Flowing soundscapes perfect for cinematic productions",
+        color: "#06b6d4",
+        type: "image",
+      },
+      {
+        image: "/images/landing/image3.png",
+        title: "URBAN",
+        subtitle: "Street-inspired beats with modern trap influences",
+        color: "#f59e0b",
+        type: "image",
+      },
+      {
+        image: "/images/landing/image4.png",
+        title: "DIGITAL",
+        subtitle: "Futuristic synths and glitchy electronic textures",
+        color: "#10b981",
+        type: "image",
+      },
+      {
+        image: "/images/landing/image5.png",
+        title: "COSMIC",
+        subtitle: "Space-age sounds for otherworldly music experiences",
+        color: "#8b5cf6",
+        type: "image",
+      },
+      {
+        image: "/images/landing/hero-video.mov",
+        title: "CINEMATIC",
+        subtitle:
+          "Immersive visual experiences that transport you beyond reality",
+        color: "#c4a734",
+        type: "video",
+      },
+    ],
+    []
+  );
 
   // Animation variants
   const textVariants = {
