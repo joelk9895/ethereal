@@ -1,10 +1,7 @@
 "use client";
 
 import { useEffect, useState, useRef } from "react";
-import {
-  motion,
-  AnimatePresence,
-} from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 interface NavItem {
   label: string;
@@ -29,8 +26,6 @@ export default function Nav() {
   useEffect(() => {
     setIsMounted(true);
   }, []);
-
-
 
   // Mouse tracking for magnetic effects
   useEffect(() => {
@@ -141,7 +136,6 @@ export default function Nav() {
       },
     },
   };
-
 
   const menuToggleVariants = {
     initial: { opacity: 0, scale: 0.8, rotate: -180 },
